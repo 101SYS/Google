@@ -14,7 +14,9 @@ namespace Core
         {
             DataState state = new DataState();
             state.RidesMap = new Map(data);
-
+            state.CurrentTime = 0;
+            state.MaxTime = data.Steps;
+            state.VehicleTime = new VehicleTimeState(data);
 
             return state;
         }

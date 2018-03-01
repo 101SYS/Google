@@ -11,6 +11,8 @@ namespace Core.Model
         public Map RidesMap { get; set; }
         public int MaxTime { get; set; }
         public int CurrentTime { get; set; }
+        public VehicleTimeState VehicleTime { get; set; }
+
 
     }
 }

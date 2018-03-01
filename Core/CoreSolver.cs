@@ -10,7 +10,7 @@ namespace Core
 {
     class CoreSolver : ISolver
     {
-        public VehicleResults Solve(DataSet data)
+        public List<VehicleResults> Solve(DataSet data)
         {
             ModelParser parser = new ModelParser();
             DataState state = parser.Parse(data);
