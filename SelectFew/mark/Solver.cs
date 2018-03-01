@@ -9,7 +9,7 @@ namespace SelectFew.mark
 {
     public class Solver : ISolver
     {
-        public async Task<VehicleResults> Solve(DataSet data)
+        public VehicleResults Solve(DataSet data)
         {
             throw new NotImplementedException();
         }
