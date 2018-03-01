@@ -8,6 +8,6 @@ namespace SelectFew.models
 {
     public interface ISolver
     {
-        async Task<VehicleResults> Solve(DataSet data);
+        Task<VehicleResults> Solve(DataSet data);
     }
 }
