@@ -19,7 +19,7 @@ namespace SelectFew
                 tasks.Add(Task.Factory.StartNew(() =>
                 {
                     var inputFile = Path.Combine(Directory.GetCurrentDirectory(), filePath);
-                    var data = dataSetMaker.CreateDataSet(File.ReadAllLines(inputFile));
+                    var data = dataSetMaker.CreateDataSet(File.ReadAllLines(inputFile),filePath);
                     dataSets.Add(data);
                     algoRunner.RunAlgorithem(data);
                 }));
@@ -29,7 +29,7 @@ namespace SelectFew
 
             foreach (DataSet dataSet in dataSets)
             {
-                algoRunner.ShowOutPut(dataSet.Result);
+                algoRunner.ShowOutPut(dataSet.Result,dataSet.FileName);
             }
         }
 
