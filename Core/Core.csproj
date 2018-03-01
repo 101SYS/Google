@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoreSolver.cs" />
     <Compile Include="ModelParser.cs" />
+    <Compile Include="Model\DataState.cs" />
     <Compile Include="Model\Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

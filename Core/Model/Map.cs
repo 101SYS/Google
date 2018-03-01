@@ -17,10 +17,10 @@ namespace Core.Model
         {
             // dataSet.Rows == X
             _ridesPerCoordiate = new List<Ride>[dataSet.Rows, dataSet.Columns];
-            foreach(var ride in dataSet.Rides)
+            foreach (var ride in dataSet.Rides)
             {
                 var list = _ridesPerCoordiate[ride.StartPoint.X, ride.StartPoint.Y];
-                if(list == null)
+                if (list == null)
                 {
                     list = new List<Ride>();
                     _ridesPerCoordiate[ride.StartPoint.X, ride.StartPoint.Y] = null;

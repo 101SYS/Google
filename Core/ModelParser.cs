@@ -1,17 +1,22 @@
-﻿using SelectFew.models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Core.Model;
+using SelectFew.models;
 
 namespace Core
 {
-    class ModelParser
+    internal class ModelParser
     {
-        public void Parse(DataSet dataSet)
+        public ModelParser()
         {
+        }
 
+        internal DataState Parse(DataSet data)
+        {
+            DataState state = new DataState();
+            state.RidesMap = new Map(data);
+
+
+            return state;
         }
     }
 }
