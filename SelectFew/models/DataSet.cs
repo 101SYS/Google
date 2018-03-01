@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace SelectFew.models
 {
     public class DataSet
     {
+        public string FileName { get; set; }
         public int Rows { get; set; }
         public int Columns { get; set; }
         public int Vehicles { get; set; }
         public int NumRides { get; set; }
         public int PerRideBonus { get; set; }
         public int Steps { get; set; }
-        public VehicleResults Result { get; set; }
+        public List<VehicleResults> Result { get; set; }
         public List<Ride> Rides { get; set; }
 
-        public DataSet(string inputParamsLine)
+        public DataSet(string inputParamsLine,string filePath)
         {
+            FileName = Path.GetFileName(filePath);
             var inputParams = inputParamsLine.Split(' ');
             Rows = Convert.ToInt32(inputParams[0]);
             Columns = Convert.ToInt32(inputParams[1]);

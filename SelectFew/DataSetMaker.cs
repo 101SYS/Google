@@ -9,9 +9,9 @@ namespace SelectFew
 {
    public class DataSetMaker
     {
-        public DataSet CreateDataSet(string[] lines)
+        public DataSet CreateDataSet(string[] lines,string filePath)
         {
-            var dataSet = new DataSet(lines[0]);
+            var dataSet = new DataSet(lines[0], filePath);
             dataSet.CreateRides(lines);
             return dataSet;
         }
