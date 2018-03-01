@@ -9,5 +9,8 @@ namespace Core.Model
     class DataState
     {
         public Map RidesMap { get; set; }
+        public int MaxTime { get; set; }
+        public int CurrentTime { get; set; }
+
     }
 }

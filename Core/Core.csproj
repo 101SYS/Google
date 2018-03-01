@@ -44,6 +44,8 @@
     <Compile Include="ModelParser.cs" />
     <Compile Include="Model\DataState.cs" />
     <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\VehicleTimeState.cs" />
+    <Compile Include="Model\VehicleState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
