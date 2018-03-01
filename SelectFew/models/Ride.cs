@@ -14,21 +14,22 @@ namespace SelectFew.models
         public int EarliestStart { get; private set; }
         public int LatestFinish { get; private set; }
         public int Distance { get; private set; }
+        public int Steps { get; private set; }
         public bool IsValid
         {
-            get { return (LatestFinish - EarliestStart) >= Distance; } 
+            get { return (LatestFinish - EarliestStart) >= Distance; }
         }
 
         public Ride(int index, string line)
         {
             Index = index;
-         
             var inputParams = line.Split(' ');
             StartPoint = new Point(Convert.ToInt32(inputParams[0]), Convert.ToInt32(inputParams[1]));
             EndPoint = new Point(Convert.ToInt32(inputParams[2]), Convert.ToInt32(inputParams[3]));
             EarliestStart = Convert.ToInt32(inputParams[4]);
             LatestFinish = Convert.ToInt32(inputParams[5]);
             Distance = Math.Abs(EndPoint.X - StartPoint.X) + Math.Abs(EndPoint.Y - StartPoint.Y);
+            Steps = Math.Abs(EndPoint.X - StartPoint.X) + Math.Abs(EndPoint.Y + StartPoint.Y);
         }
     }
 }
