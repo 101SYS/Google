@@ -11,7 +11,7 @@ namespace SelectFew.models
         public int NumRides { get; set; }
         public int PerRideBonus { get; set; }
         public int Steps { get; set; }
-
+        public VehicleResults Result { get; set; }
         public List<Ride> Rides { get; set; }
 
         public DataSet(string inputParamsLine)
