@@ -14,13 +14,10 @@ namespace SelectFew
 
         }
 
-        public void ShowOutPut(List<VehicleResults> vehicles)
+        public void ShowOutPut(VehicleResults vehicle)
         {
-            foreach (var vehicle in vehicles)
-            {
-                Console.Write(vehicle.RidesIndexs.Count + " ");
-                vehicle.RidesIndexs.ForEach(index => Console.Write(index + " "));
-            }
+            Console.Write(vehicle.RidesIndexs.Count + " ");
+            vehicle.RidesIndexs.ForEach(index => Console.Write(index + " "));
         }
 
     }
