@@ -28,7 +28,11 @@ namespace Core.Model
 
                 list.Add(ride);
             }
+        }
 
+        public List<Ride> GetRides(int x, int y)
+        {
+            return _ridesPerCoordiate[x, y] ?? new List<Ride>();
         }
 
     }
