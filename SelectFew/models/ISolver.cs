@@ -8,6 +8,6 @@ namespace SelectFew.models
 {
     public interface ISolver
     {
-        VehicleResults Solve(DataSet data);
+        List<VehicleResults> Solve(DataSet data);
     }
 }
