@@ -16,8 +16,6 @@ namespace SelectFew
 
         public void ShowOutPut(VehicleResults vehicle)
         {
-            var sb = new StringBuilder();
-          
             Console.Write(vehicle.RidesIndexs.Count + " ");
             vehicle.RidesIndexs.ForEach(index => Console.Write(index + " "));
         }

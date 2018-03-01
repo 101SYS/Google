@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlgorithemRunner.cs" />
-    <Compile Include="AryeSolver.cs" />
     <Compile Include="DataSetMaker.cs" />
     <Compile Include="mark\Solver.cs" />
     <Compile Include="mark\Step.cs" />
@@ -53,7 +52,6 @@
     <Compile Include="models\ISolver.cs" />
     <Compile Include="models\Point.cs" />
     <Compile Include="models\Ride.cs" />
-    <Compile Include="models\Vehicle.cs" />
     <Compile Include="models\VehicleResults.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
