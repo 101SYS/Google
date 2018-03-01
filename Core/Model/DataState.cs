@@ -13,6 +13,7 @@ namespace Core.Model
         public int CurrentTime { get; set; }
         public VehicleTimeState VehicleTime { get; set; }
 
+        public VehicleState[] Vehicles { get; set; }
 
     }
 }

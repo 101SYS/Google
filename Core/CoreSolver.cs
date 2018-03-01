@@ -14,7 +14,14 @@ namespace Core
         {
             ModelParser parser = new ModelParser();
             DataState state = parser.Parse(data);
-            throw new NotImplementedException();
+
+            TimeSolver solver = new TimeSolver();
+            solver.Solve(state);
+
+            return state.Vehicles.Select(vehicle => new VehicleResults()
+            {
+                RidesIndexs = vehicle.RideHistory.Select(r => r.Index).ToList(),
+            }).ToList();
         }
     }
 }

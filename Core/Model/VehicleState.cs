@@ -11,6 +11,8 @@ namespace Core.Model
     {
 
         public List<Ride> RideHistory { get; set; } = new List<Ride>();
+        public Point TimeLocation { get; set; }
+        public int CurrentTime { get; set; }
 
     }
 }
