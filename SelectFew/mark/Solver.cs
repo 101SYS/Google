@@ -12,6 +12,7 @@ namespace SelectFew.mark
         public VehicleResults Solve(DataSet data)
         {
             var ridesPerStep = data.Rides.GroupBy(r => r.EarliestStart).OrderBy(g => g.Key).Select(g => g.Select(r => r)).ToList();
+            
             return null;
         }
     }

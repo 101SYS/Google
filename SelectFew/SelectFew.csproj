@@ -47,6 +47,7 @@
     <Compile Include="AlgorithemRunner.cs" />
     <Compile Include="DataSetMaker.cs" />
     <Compile Include="mark\Solver.cs" />
+    <Compile Include="mark\Step.cs" />
     <Compile Include="models\DataSet.cs" />
     <Compile Include="models\ISolver.cs" />
     <Compile Include="models\Point.cs" />
