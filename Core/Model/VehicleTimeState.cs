@@ -25,5 +25,16 @@ namespace Core.Model
             }
         }
 
+        public IEnumerable<int> GetVehiclesUpToTime(int time)
+        {
+            for (int i = 0; i < time; i++)
+            {
+                foreach (var vehicleId in _vehiclesInTime[i])
+                {
+                    yield return vehicleId;
+                }
+            }
+        }
+
     }
 }

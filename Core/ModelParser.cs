@@ -22,9 +22,10 @@ namespace Core
             {
                 state.Vehicles[i] = new VehicleState()
                 {
-                    CurrentTime = 0,
+                    FirstRelevantTime = 0,
                     TimeLocation = new Point(0, 0),
                     RideHistory = new System.Collections.Generic.List<Ride>(),
+                    PossibleMovesUpToCurrentTime = new System.Collections.Generic.List<System.Collections.Generic.List<Point>>(),
                 };
             }
             

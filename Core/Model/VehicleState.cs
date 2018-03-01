@@ -9,10 +9,11 @@ namespace Core.Model
 {
     class VehicleState
     {
-
         public List<Ride> RideHistory { get; set; } = new List<Ride>();
         public Point TimeLocation { get; set; }
-        public int CurrentTime { get; set; }
+        public int FirstRelevantTime { get; set; }
+
+        public List<List<Point>> PossibleMovesUpToCurrentTime { get; set; }
 
     }
 }
