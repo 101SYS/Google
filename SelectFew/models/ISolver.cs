@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace SelectFew.models
 {
-    public class Vehicle
+    public interface ISolver
     {
-        public List<int> RidesIndexs { get; set; }
+        Task<VehicleResults> Solve(DataSet data);
     }
 }
