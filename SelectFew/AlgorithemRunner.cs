@@ -14,7 +14,7 @@ namespace SelectFew
 
         }
 
-        public void ShowOutPut(List<Vehicle> vehicles)
+        public void ShowOutPut(List<VehicleResults> vehicles)
         {
             foreach (var vehicle in vehicles)
             {
